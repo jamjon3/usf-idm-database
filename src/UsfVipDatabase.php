@@ -2,7 +2,12 @@
 
 namespace USF\IdM;
 
-class UsfVipDatabase {
+require_once 'UsfDatabaseConnection.php';
+
+class UsfVipDatabase extends UsfDatabaseConnection {
+    function __construct() {
+        parent::__construct('vip');
+    }
 
 }
 ?>
