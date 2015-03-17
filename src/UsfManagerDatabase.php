@@ -2,7 +2,13 @@
 
 namespace USF\IdM;
 
-class UsfManagerDatabase {
+require_once 'UsfDatabaseConnection.php';
+
+class UsfManagerDatabase extends UsfDatabaseConnection {
+    function __construct() {
+        parent::__construct('manager');
+    }
 
 }
+
 ?>

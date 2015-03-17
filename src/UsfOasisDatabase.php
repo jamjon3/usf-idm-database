@@ -2,7 +2,12 @@
 
 namespace USF\IdM;
 
-class UsfOasisDatabase {
+require_once 'UsfDatabaseConnection.php';
+
+class UsfOasisDatabase extends UsfDatabaseConnection {
+    function __construct() {
+        parent::__construct('oasis');
+    }
 
 }
 ?>

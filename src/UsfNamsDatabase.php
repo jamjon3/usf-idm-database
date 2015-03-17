@@ -2,7 +2,12 @@
 
 namespace USF\IdM;
 
-class UsfNamsDatabase {
+require_once 'UsfDatabaseConnection.php';
+
+class UsfNamsDatabase extends UsfDatabaseConnection {
+    function __construct() {
+        parent::__construct('nams');
+    }
 
 }
 ?>

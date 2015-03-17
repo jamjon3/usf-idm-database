@@ -2,7 +2,12 @@
 
 namespace USF\IdM;
 
-class UsfGemsDatabase {
+require_once 'UsfDatabaseConnection.php';
+
+class UsfGemsDatabase extends UsfDatabaseConnection {
+    function __construct() {
+        parent::__construct('gems');
+    }
 
 }
 ?>
