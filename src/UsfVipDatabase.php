@@ -9,5 +9,8 @@ class UsfVipDatabase extends UsfDatabaseConnection {
         parent::__construct('vip');
     }
 
+	public function identityCount() {
+		return 5;
+	}
 }
 ?>
