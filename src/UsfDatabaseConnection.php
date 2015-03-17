@@ -27,8 +27,6 @@
  * 
  */
 
-require_once ('../vendor/autoload.php');
-
 use USF\IdM\UsfConfig;
 
 class UsfDatabaseConnection {
