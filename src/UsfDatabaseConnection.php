@@ -27,12 +27,14 @@
  * 
  */
 
+namespace USF\IdM;
+
 use USF\IdM\UsfConfig;
 
 class UsfDatabaseConnection {
     
     // Meedo database connection
-    protected $dbh;
+    protected $dbc;
     // Database source key name in the config
     protected $source;
     
@@ -46,7 +48,7 @@ class UsfDatabaseConnection {
         //Access configuration values from default location (/usr/local/etc/idm_config)
         $config = new UsfConfig();
         $this->source = $source;
-        $this->dbh = new medoo($config->databaseConfig[$source]);
+        $this->dbc = new \medoo($config->databaseConfig[$source]); // medoo does not use namespaces
     }
 
 }
