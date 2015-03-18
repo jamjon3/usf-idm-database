@@ -1,0 +1,8 @@
+# database configuration
+databaseConfig:
+- vip:
+    database_type: mysql
+    database_name: vip
+    server: localhost
+    user_name: vip
+    password: password

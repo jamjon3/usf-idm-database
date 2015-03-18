@@ -45,7 +45,7 @@ class UsfDatabaseConnection {
     function __construct($source) {
         //Access configuration values from default location (/usr/local/etc/idm_config)
         $config = new UsfConfig();
-        $this->source = source;
+        $this->source = $source;
         $this->dbh = new medoo($config->databaseConfig[$source]);
     }
 
