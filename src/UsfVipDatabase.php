@@ -8,8 +8,8 @@ class UsfVipDatabase extends UsfDatabaseConnection {
     }
 
 	public function identityCount() {
-		$qstr = "select * from identity";
-		$data_r = $this->dbc->query($qstr)->fetchAll();
+		$query = "select * from identity";
+		$data_r = $this->db->query($query)->fetchAll();
 		return count($data_r);
 	}
 }
