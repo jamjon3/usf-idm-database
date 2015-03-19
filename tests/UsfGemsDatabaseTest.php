@@ -20,7 +20,7 @@ class UsfGemsDatabaseTest extends TestCase {
 	
 	public function test_getDepartmentList() {
 		$db = new UsfGemsDatabase();
-		$this->assertGreaterThan(700, count($db->getDapartmentList()));
+		$this->assertGreaterThan(700, count($db->getDepartmentList()));
 	}
 }
 

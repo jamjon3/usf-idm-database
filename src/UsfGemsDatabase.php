@@ -17,7 +17,7 @@ class UsfGemsDatabase extends UsfDatabaseConnection {
 		return $data_r;
 	}
 
-	public function getDapartmentList() {
+	public function getDepartmentList() {
 		$query = "select distinct d.deptid, d.descr, d.U_VP_AREA, d.EFFDT
 			from ps_dept_tbl d
 			where d.effdt = (select max(d2.effdt) from ps_dept_tbl d2 where d2.setid = d.setid and d2.deptid = d.deptid and d2.effdt <= sysdate)
