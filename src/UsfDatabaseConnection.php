@@ -29,16 +29,12 @@
 
 namespace USF\IdM;
 
-use Doctrine\ORM\Tools\Setup;
-use Doctrine\ORM\EntityManager;
 use USF\IdM\UsfConfig;
 
-class UsfDatabaseConnection {
+class UsfDatabaseConnection extends UsfAbstractResource {
 
     // Meedo database connection
     protected $db;
-    // ORM entity manager
-    protected $em;
     // Database source key name in the config
     protected $source;
 
@@ -53,24 +49,6 @@ class UsfDatabaseConnection {
         $config = new UsfConfig();
         $this->source = $source;
         $this->db = new \medoo($config->databaseConfig[$source]); // medoo does not use namespaces
-        // Create a simple "default" Doctrine ORM configuration for Annotations
-        $isDevMode = true;
-        $paths = array(__DIR__ . "/src/lib");
-
-        // The DBAL connection configuration
-        $dbParams = $config->dbalConfig;
-
-        $emconfig = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
-        $this->em = EntityManager::create($dbParams, $emconfig);
     }
-    
-    /**
-     * Returns the EntityManager
-     * 
-     * @return Doctrine\ORM\EntityManager EntityManager
-     */
-    public function getEntityManager() {
-        return $this->em;
-    }
-    
+        
 }
