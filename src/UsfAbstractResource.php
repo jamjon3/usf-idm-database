@@ -55,6 +55,7 @@ abstract class UsfAbstractResource {
         // Create a simple "default" Doctrine ORM configuration for Annotations
         $isDevMode = true;
         $paths = array(__DIR__ . "/src/lib");
+        echo $paths;
 
         // The DBAL connection configuration
         $dbParams = $config->dbalConfig;
