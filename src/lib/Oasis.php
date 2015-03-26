@@ -29,49 +29,49 @@ namespace USF\IdM\Entities;
  */
 class Oasis {
     /** 
-     * @Id @Column(type="integer",nullable="false") 
+     * @Id @Column(type="integer",nullable=false) 
      * @GeneratedValue(strategy="NONE")
      */
     private $pidm; // int(11) NOT NULL AUTO_INCREMENT,
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $badge; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="string",length=9,nullable="false") */
+    /** @Column(type="string",length=9,nullable=false) */
     private $ssn; // varchar(9) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=9,nullable="false",unique="true") */
+    /** @Column(type="string",length=9,nullable=false,unique=true) */
     private $usfid; // varchar(9) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $registered; // char(1) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=4,nullable="false") */
+    /** @Column(type="string",length=4,nullable=false) */
     private $majrcode; // varchar(4) NOT NULL DEFAULT '',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $deptid; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="string",length=2,nullable="false") */
+    /** @Column(type="string",length=2,nullable=false) */
     private $college; // char(2) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $campus; // char(1) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $privacy; // char(1) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=2,nullable="false") */
+    /** @Column(type="string",length=2,nullable=false) */
     private $levelcode; // char(2) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=2,nullable="false") */
+    /** @Column(type="string",length=2,nullable=false) */
     private $class; // char(2) NOT NULL DEFAULT '',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $lastterm; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $dead; // char(1) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=12,nullable="false") */
+    /** @Column(type="string",length=12,nullable=false) */
     private $mailpoint; // varchar(12) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=10,nullable="false") */
+    /** @Column(type="string",length=10,nullable=false) */
     private $phone; // varchar(10) NOT NULL DEFAULT '',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $admitterm; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $asterm; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $instterm; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="string",length=48,nullable="false") */
+    /** @Column(type="string",length=48,nullable=false) */
     private $email; // varchar(48) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=15,nullable="false") */
+    /** @Column(type="string",length=15,nullable=false) */
     private $nickname; // varchar(15) NOT NULL DEFAULT ''
 
 }

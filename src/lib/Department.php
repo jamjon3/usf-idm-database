@@ -29,13 +29,13 @@ namespace USF\IdM\Entities;
 class Department {
 
     /** 
-     * @Id @Column(type="string",length=16,nullable="false",name="department_gems_id") 
+     * @Id @Column(type="string",length=16,nullable=false,name="department_gems_id") 
      * @GeneratedValue(strategy="NONE")
      */
     private $departmentGemsId; // VARCHAR(16) NOT NULL,
-    /** @Column(type="string",length=128,nullable="false",name="department_name") */
+    /** @Column(type="string",length=128,nullable=false,name="department_name") */
     private $departmentName; // VARCHAR(128) NOT NULL,
-    /** @Column(type="string",length=16,nullable="true",name="vp_area_gems_id") */
+    /** @Column(type="string",length=16,nullable=true,name="vp_area_gems_id") */
     private $vpAreaGemsId; // VARCHAR(16),
 
 }

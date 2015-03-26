@@ -30,25 +30,25 @@ namespace USF\IdM\Entities;
 class Netid {
 
     /** 
-     * @Id @Column(type="string",length=128,nullable="false") 
+     * @Id @Column(type="string",length=128,nullable=false) 
      * @GeneratedValue(strategy="NONE")
      */
     private $netid; // varchar(128) NOT NULL DEFAULT '',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $badge; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="datetime",nullable="false") */
+    /** @Column(type="datetime",nullable=false) */
     private $activity; // timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    /** @Column(type="datetime",nullable="false") */
+    /** @Column(type="datetime",nullable=false) */
     private $effdate; // timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-    /** @Column(type="datetime",nullable="false") */
+    /** @Column(type="datetime",nullable=false) */
     private $expire; // timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $ldap; // char(1) NOT NULL DEFAULT '',
-    /** @Column(type="string",length=1,nullable="false") */
+    /** @Column(type="string",length=1,nullable=false) */
     private $usealias; // char(1) NOT NULL DEFAULT 'N',
-    /** @Column(type="integer",nullable="false") */
+    /** @Column(type="integer",nullable=false) */
     private $secretq; // int(11) NOT NULL DEFAULT '0',
-    /** @Column(type="string",length=100,nullable="false") */
+    /** @Column(type="string",length=100,nullable=false) */
     private $secreta; // varchar(100) NOT NULL DEFAULT ''
 
 }

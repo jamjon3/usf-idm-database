@@ -30,11 +30,11 @@ namespace USF\IdM\Entities;
 class VpArea {
 
     /** 
-     * @Id @Column(type="string",length=16,nullable="false",name="vp_area_gems_id") 
+     * @Id @Column(type="string",length=16,nullable=false,name="vp_area_gems_id") 
      * @GeneratedValue(strategy="NONE")
      */
     private $vpAreaGemsId; // VARCHAR(16) NOT NULL,
-    /** @Column(type="string",length=128,nullable="false",name="vp_area_name") */
+    /** @Column(type="string",length=128,nullable=false,name="vp_area_name") */
     private $vpAreaName; // VARCHAR(128) NOT NULL,
 
 }
