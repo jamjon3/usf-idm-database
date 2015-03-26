@@ -63,5 +63,17 @@ abstract class UsfAbstractResource {
         $emconfig = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
         return EntityManager::create($dbParams, $emconfig);        
     }
-
+    /**
+     * Returns an array of registered entity class names
+     * 
+     * @return Array of entities
+     */
+    public function getMetadataEntityClassNames() {
+        $classes = array();
+        $metas = $this->getEntityManager()->getMetadataFactory()->getAllMetadata();
+        foreach ($metas as $meta) {
+            $classes[] = $meta->getName();
+        }
+        return $classes;
+    }
 }
