@@ -10,7 +10,7 @@ use USF\IdM\UsfConfig;
 
 // Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
-$paths = array(__DIR__."/src/lib");
+$paths = array(__DIR__."/lib");
 
 // Access configuration values from default location (/usr/local/etc/idm_config)
 $idm_config = new UsfConfig();
