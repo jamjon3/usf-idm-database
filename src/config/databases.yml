@@ -6,3 +6,11 @@ databaseConfig:
     server: 127.0.0.1
     username: user
     password: password
+    port: 3306
+  gems:
+    database_type: oracle
+    database_name: db
+    server: 127.0.0.1
+    username: user
+    password: password
+    port: 1526

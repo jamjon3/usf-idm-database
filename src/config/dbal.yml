@@ -1,0 +1,9 @@
+# dbal configuration
+dbalConfig:
+    driver: pdo_mysql
+    host: 127.0.0.1
+    dbname: db
+    user: user
+    password: password
+    port: 3306
+    charset: UTF8
