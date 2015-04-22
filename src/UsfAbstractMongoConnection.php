@@ -34,8 +34,7 @@ abstract class UsfAbstractMongoConnection {
      *
      * @var MongoDB
      */
-    private static $mongodb;
-    
+    private $mongodb = null;
     /**
      * @return MongoDB
      */
