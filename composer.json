@@ -25,7 +25,8 @@
         "usf-it/usf-idm-common": "dev-master",
         "catfan/medoo": "0.9.8",
         "doctrine/orm": "2.4.*",
-        "symfony/yaml": "2.*"
+        "symfony/yaml": "2.*",
+        "ext-mongo": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.3.*",
