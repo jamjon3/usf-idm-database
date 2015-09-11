@@ -58,10 +58,10 @@ abstract class UsfAbstractMongoConnection {
         
         if(empty($mongoConfig)) {
             return new MongoClient();
-        } elseif (empty($mongoConfig->options)) {
-            return new MongoClient($mongoConfig->server);
+        } elseif (!isset($mongoConfig->options)) {
+            return new MongoClient($mongoConfig['server']);
         } else {
-            return new MongoClient($mongoConfig->server,$mongoConfig->options);
+            return new MongoClient($mongoConfig['server'],$mongoConfig['options']);
         }
     }
     
