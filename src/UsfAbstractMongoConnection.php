@@ -39,7 +39,7 @@ abstract class UsfAbstractMongoConnection {
      * @return MongoDB
      */
     public function getMongoConnection() {
-        if ($this->mongodb === null) {
+        if(!isset($this->mongodb)) {
             $this->mongodb = $this->createMongoConnection();
         }
 
@@ -58,10 +58,10 @@ abstract class UsfAbstractMongoConnection {
         
         if(empty($mongoConfig)) {
             return new MongoClient();
-        } elseif (empty($mongoConfig->options)) {
-            return new MongoClient($mongoConfig->server);
+        } elseif (!isset($mongoConfig['options'])) {
+            return new MongoClient($mongoConfig['server']);
         } else {
-            new MongoClient($mongoConfig->server,$mongoConfig->options);
+            return new MongoClient($mongoConfig['server'],$mongoConfig['options']);
         }
     }
     
