@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "usf-it/usf-idm-common": "dev-master",
+        "usf-it/usf-idm-common": "0.5.0",
         "catfan/medoo": "0.9.8",
         "doctrine/orm": "2.4.*",
         "symfony/yaml": "2.*",
